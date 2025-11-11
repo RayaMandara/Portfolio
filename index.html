@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-Sam</title>
+  <link rel="icon" type="icon/image" href="./img/logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0f172a;
+  }
+
+
+  @keyframes spin-loop {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin-smooth {
+    animation: spin-loop 5s linear infinite;
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .spin-smooth:hover {
+    animation-play-state: paused;
+    transform: rotate(0deg);
+  }
+</style>
+
+<body>
+
+  <nav
+    class="fixed top-0 left-0 w-full bg-slate-900 text-white font-bold z-50 border-b border-blue-500 shadow-[0_0_20px_3px_rgba(59,130,246,0.3)]">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center p-4">
+      <h1 class="text-2xl italic mx-5 text-center md:text-left mb-2 md:mb-0"><span class="text-blue-400"
+          style="text-shadow: 0 0 10px rgba(59,130,246,0.7);">Sam</span>-Dev.</h1>
+
+      <div class="flex justify-center mx-auto gap-5 md:justify-end md:mx-auto text-sm md:text-lg">
+        <a href="#home"
+          class="px-3 py-1 transition-all duration-300  hover:bg-white hover:text-slate-900 rounded-sm hover:px-3 hover:py-1">Home</a>
+        <a href="#about"
+          class="px-3 py-1 transition-all duration-300  hover:bg-white hover:text-slate-900 rounded-sm hover:px-3 hover:py-1">About</a>
+        <a href="#project"
+          class="px-3 py-1 transition-all duration-300  hover:bg-white hover:text-slate-900 rounded-sm hover:px-3 hover:py-1">Project</a>
+        <a href="#contact"
+          class="px-3 py-1 outline-2 outline-white transition-all duration-300 hover:bg-white hover:text-slate-900 rounded-sm hover:px-3 hover:py-1">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="px-6 py-20 md:py-0">
+    <div data-aos="fade-up" data-aos-duration="2000"
+      class="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-10 text-center md:text-left md:mt-10 -mt-32">
+      <div class="text-white">
+        <h1 class="text-4xl font-bold">Hai, I'm <span class="text-blue-400"
+            style="text-shadow: 0 0 10px rgba(59,130,246,0.7);">Raya</span></h1>
+        <p class="text-xl font-semibold mt-2">I'm a Student at SMK Pariwisata Triatma Jaya</p>
+        <a class="inline-block outline-2 py-2 px-4 mt-6 rounded-sm font-bold shadow-[0_0_20px_8px_rgba(59,130,246,0.3)] animate-bounce hover:bg-white hover:outline-white hover:text-slate-800 transition duration-300"
+          href="#about">
+          More About Me
+        </a>
+      </div>
+
+      <div class="flex justify-center mb-6 md:mb-0">
+        <a href="https://www.instagram.com/rayamandara?igsh=MTE3cjZoZXNqeXgwOQ==">
+          <img
+            class="w-56 md:w-96 rounded-full bg-no-repeat bg-cover shadow-[0_0_20px_8px_rgba(59,130,246,0.3)] transition-transform duration-700 hover:rotate-[360deg]"
+            src="./img/pp.jpeg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div data-aos="fade-up" data-aos-duration="2000"
+      class="min-h-screen flex flex-col md:flex-row justify-center items-center gap-10 md:gap-15 px-5 mb-72 md:mb-20">
+      <div
+        class="border-[4px] rounded-xl p-9 bg-slate-800 border-blue-700 shadow-[0_0_20px_3px_rgba(59,130,246,0.5)] mb-8 md:mb-0">
+        <img class="w-60 md:w-80 h-auto bg-cover bg-no-repeat hover:scale-105 transition duration-300"
+          src="./img/about.jpeg" alt="">
+      </div>
+
+      <div
+        class="w-full md:w-[600px] text-justify border-[4px] bg-slate-800 border-blue-700 rounded-[40px] shadow-[0_0_20px_3px_rgba(59,130,246,0.5)] p-5 md:p-8 hover:scale-105 transition duration-300">
+        <h1 class="text-center font-bold text-2xl md:text-3xl text-white">
+          About Me
+        </h1>
+
+        <p class="font-medium mt-3 text-white leading-relaxed text-sm md:text-[15px]">
+          Hi, <span class="text-blue-300 font-bold" style="text-shadow: 0 0 10px rgba(59,130,246,0.7);">I'm Si Ngurah
+            Putu Alit Raya Mandara</span> aka
+          <span class="text-blue-300 font-bold" style="text-shadow: 0 0 10px rgba(59,130,246,0.7);">Sam</span>. I'm from
+          Bali, Indonesia,
+          and currently studying at SMK Triatma Jaya Badung. I'm an 11th-grade student majoring in Software and Game
+          Development (PPLG). I'm 16 years old and passionate about technology, programming, and web development. I'm
+          always eager to learn new things and create meaningful digital projects that inspire others. I'm currently
+          learning to use <span class="text-blue-300 font-bold"
+            style="text-shadow: 0 0 10px rgba(59,130,246,0.7);">Tailwind CSS</span>
+          to improve my web design skills.
+        </p>
+
+        <h1 class="font-bold text-xl md:text-2xl text-blue-400 m-5" style="text-shadow: 0 0 10px rgba(59,130,246,0.7);">
+          Skills :
+        </h1>
+
+        <div class="flex flex-wrap justify-center md:justify-start gap-5 p-4">
+          <img class="w-14 md:w-14 h-12 spin-smooth" src="./img/html.png" alt="">
+          <img class="w-14 md:w-14 h-12 spin-smooth" src="./img/css.png" alt="">
+          <img class="w-16 md:w-16 h-12 spin-smooth" src="./img/bootstrap.png" alt="">
+          <img class="w-16 md:w-16 h-12 spin-smooth" src="./img/tailwind.png" alt="">
+          <img class="w-16 md:w-16 h-12 spin-smooth" src="./img/php.png" alt="">
+          <img class="w-16 md:w-16 h-auto spin-smooth" src="./img/gpt.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="project">
+    <div class="min-h-screen flex flex-col justify-center items-center text-white mb-32 md:mb-12">
+      <h1 class="font-bold mb-10 text-4xl">My Project</h1>
+
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
+        <div data-aos="flip-left" data-aos-delay="300">
+          <div
+            class="border-[4px] rounded-sm border-blue-700 p-5 bg-slate-700 shadow-[0_0_20px_3px_rgba(59,130,246,0.5)] hover:scale-105 transition duration-300">
+            <img class="w-72 h-auto" src="./img/online-shop.png" alt="">
+            <h1 class="text-2xl font-bold p-3">Online Shop</h1>
+            <a class="bg-blue-500 outline-3 outline-blue-500 py-2 font-bold flex justify-center rounded-lg mt-5 hover:bg-slate-700 hover:text-blue-500 transition duration-300"
+              href="https://github.com/RayaMandara/Online-Shop" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div data-aos="flip-left" data-aos-delay="600">
+          <div
+            class="border-[4px] rounded-sm border-blue-700 p-5 bg-slate-700 shadow-[0_0_20px_3px_rgba(59,130,246,0.5)] hover:scale-105 transition duration-300">
+            <img class="w-72 h-auto" src="./img/library.png" alt="">
+            <h1 class="text-2xl font-bold p-3">Library Digital</h1>
+            <a class="bg-blue-500 outline-3 outline-blue-500 py-2 font-bold flex justify-center rounded-lg mt-5 hover:bg-slate-700 hover:text-blue-500 transition duration-300"
+              href="https://github.com/RayaMandara/Library-Digital" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div data-aos="flip-left" data-aos-delay="900">
+          <div
+            class="border-[4px] rounded-sm border-blue-700 p-5 bg-slate-700 shadow-[0_0_20px_3px_rgba(59,130,246,0.5)] hover:scale-105 transition duration-300">
+            <img class="w-72 h-auto" src="./img/bk.png" alt="">
+            <h1 class="text-2xl font-bold p-3">Bimbingan Konseling</h1>
+            <a class="bg-blue-500 outline-3 outline-blue-500 py-2 font-bold flex justify-center rounded-lg mt-5 hover:bg-slate-700 hover:text-blue-500 transition duration-300"
+              href="https://github.com/RayaMandara/Bimbingan-Konseling" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="min-h-screen flex flex-col justify-center items-center text-white" data-aos="zoom-in">
+    <h1 class="text-4xl font-bold mb-10">Contact Me</h1>
+
+    <form class="bg-slate-800 p-8 rounded-xl shadow-[0_0_20px_3px_rgba(59,130,246,0.5)] w-11/12 max-w-lg"
+      action="https://formspree.io/f/myzbeodq" method="POST">
+      <div class="mb-5">
+        <label class="block mb-2 text-blue-300 font-semibold">Name</label>
+        <input type="text" name="name" placeholder="Your name" required
+          class="w-full p-3 rounded-md bg-slate-900 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">
+      </div>
+
+      <div class="mb-5">
+        <label class="block mb-2 text-blue-300 font-semibold">Email</label>
+        <input type="email" name="email" placeholder="Your email" required
+          class="w-full p-3 rounded-md bg-slate-900 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">
+      </div>
+
+      <div class="mb-5">
+        <label class="block mb-2 text-blue-300 font-semibold">Message</label>
+        <textarea placeholder="Write your message..." rows="5" name="message" required
+          class="w-full p-3 rounded-md bg-slate-900 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-blue-600 py-3 rounded-md font-bold text-white hover:bg-blue-500 hover:scale-105 transition duration-300 shadow-[0_0_15px_rgba(59,130,246,0.5)]">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <footer class="bg-slate-900 text-white py-6 border-t border-blue-700 shadow-[0_0_20px_3px_rgba(59,130,246,0.3)]">
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 gap-4 text-center md:text-left">
+
+      <h1 class="text-xl font-bold italic">
+        <span class="text-blue-400" style="text-shadow: 0 0 10px rgba(59,130,246,0.7);">Sam</span>-Dev.
+      </h1>
+
+      <div class="flex gap-5 text-blue-300">
+        <a href="https://github.com/RayaMandara" target="_blank"
+          class="hover:text-blue-500 transition duration-300">GitHub</a>
+        <a href="https://www.instagram.com/rayamandara?igsh=MTE3cjZoZXNqeXgwOQ==" target="_blank"
+          class="hover:text-blue-500 transition duration-300">Instagram</a>
+        <a href="https://www.tiktok.com/@akutampandanpintar" target="_blank" class="hover:text-blue-500 transition duration-300">Tiktok</a>
+      </div>
+
+      <p class="text-sm text-slate-400">
+        © 2025 Sam. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: false
+  });
+
+
+  document.querySelector("form").addEventListener("submit", async function (event) {
+    event.preventDefault(); // cegah reload otomatis
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // Kirim data ke Formspree
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset(); 
+      location.reload();
+    } else {
+      alert("Oops! Something went wrong. Please try again.");
+    }
+  });
+</script>
+
+</html>
